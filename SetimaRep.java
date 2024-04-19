@@ -6,8 +6,8 @@ public class SetimaRep {
 
 	public static void main(String[] args) {
 		
-		int funcionarios, salario;
-		double totalSalarios = 0;
+		int funcionarios, sal;
+		double totalSalarios = 0, mediasal;
 		
 		Scanner ler = new Scanner(System.in);
 
@@ -18,14 +18,14 @@ public class SetimaRep {
 
 		for (int i = 1; i <= funcionarios; i++) {
 			System.out.print("Digite o salário do funcionário " + i + ": ");
-			salario = ler.nextInt();
+			sal = ler.nextInt();
 			
-			totalSalarios += salario;
+			totalSalarios += sal;
 		}
 
-		double mediaSalarial = totalSalarios / funcionarios;
+		mediasal = totalSalarios / funcionarios;
 
-		System.out.println("A média salarial da empresa é: " + mediaSalarial);
+		System.out.println("A média salarial da empresa é: " + mediasal);
 
 		ler.close();
 
